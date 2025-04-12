@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premium Image Viewer | Catbox.moe</title>
+    <title>Premium Image Viewer | Branpedia</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -201,10 +201,10 @@
             <div class="loading" id="loading">
                 <div class="spinner"></div>
             </div>
-            <img src="https://files.catbox.moe/s5scsw.jpg" alt="Catbox Image" id="viewer-image" style="display: none;">
+            <img src="https://files.catbox.moe/s5scsw.jpg" alt="Branpedia Image" id="viewer-image" style="display: none;">
             <div class="image-info">
                 <h3>Image Details</h3>
-                <p>Hosted on Catbox.moe</p>
+                <p>Hosted on Branpedia</p>
                 <p id="resolution-info">Loading resolution...</p>
                 <p id="size-info">Loading file size...</p>
             </div>
@@ -212,7 +212,7 @@
     </main>
     
     <footer>
-        <p>Premium Image Viewer &copy; 2023 | Powered by Catbox.moe</p>
+        <p>Premium Image Viewer &copy; 2025 | Powered by Branpedia</p>
     </footer>
     
     <script>
@@ -259,7 +259,7 @@
                         a.href = blobUrl;
                         
                         // Set the filename for the download
-                        const filename = image.src.split('/').pop() || 'catbox-image.jpg';
+                        const filename = image.src.split('/').pop() || 'branpedia-image.jpg';
                         a.download = filename;
                         
                         // Append to the body, click it, and remove it
@@ -275,7 +275,7 @@
                         // Fallback to the original method if fetch fails
                         const a = document.createElement('a');
                         a.href = image.src;
-                        a.download = 'catbox-image.jpg';
+                        a.download = 'branpedia-image.jpg';
                         document.body.appendChild(a);
                         a.click();
                         document.body.removeChild(a);
